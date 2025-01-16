@@ -2,7 +2,7 @@ from web3 import Web3
 
 # Infura 프로젝트 ID를 사용하여 Web3 인스턴스 생성
 infura_project_id = '29ac4a6abab2469cb0d87fa1fedef4d6'
-infura_url = f'https://sepolia.infura.io/v3/{infura_project_id}'
+infura_url = f'https://mainnet.infura.io/v3/{infura_project_id}'
 web3 = Web3(Web3.HTTPProvider(infura_url))
 
 # 계약 주소 및 ABI 설정
@@ -35,3 +35,4 @@ def get_operator_addresses():
     print(f"SCAN2024{{{', '.join(operators)}}}")
 
 get_operator_addresses()
+
